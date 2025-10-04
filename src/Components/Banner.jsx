@@ -2,6 +2,8 @@ import mbappe from "../assets/mbappe.png";
 import football from "../assets/soccer-goal-top-png-8 4.png"
 import psg from "../assets/Card-psg.png"
 import line from "../assets/Line Marker.png"
+
+
 const Banner = () => {
   return (
     <div className="relative bg-black w-full h-[600px] flex justify-between items-center">
@@ -19,7 +21,8 @@ const Banner = () => {
         <div className="absolute top-20 right-24">
             <img src={psg} className=""></img>
         </div>
-        <div className="bg-white/10 absolute bottom-0 right-0 pt-20 pl-20 rounded-tl-full">
+        <div className="bg-white/10 absolute bottom-0 right-0 pt-20 pl-20 rounded-tl-full"
+        >
             <img src={football} className="" ></img>
         </div>
       </div>

@@ -31,10 +31,7 @@ const Navbar = () => {
             <NavLink>Home</NavLink>
           </li>
           <li>
-            <NavLink>Players</NavLink>
-          </li>
-          <li>
-            <NavLink>About Us</NavLink>
+            <NavLink to="/about">About Us</NavLink>
           </li>
         </ul>
         </div>
@@ -47,10 +44,7 @@ const Navbar = () => {
             <NavLink>Home</NavLink>
           </li>
           <li>
-            <NavLink>Players</NavLink>
-          </li>
-          <li>
-            <NavLink>About Us</NavLink>
+            <NavLink to="/about">About Us</NavLink>
           </li>
         </ul>
       </div>
