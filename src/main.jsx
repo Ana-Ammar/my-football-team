@@ -5,8 +5,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import RootLayout from './Layouts/RootLayout'
 import About from './Pages/About'
 import Home from './Pages/Home'
-import playersData from '../public/player.json'
 import PlayerDetails from './Pages/PlayerDetails'
+import Login from './Registers & Login/Login'
 
 const router = createBrowserRouter ([
   {
@@ -15,12 +15,16 @@ const router = createBrowserRouter ([
     children: [
       {
         index: true,
-        loader: () => {return playersData},
+        Component: Login
+      },
+      {
+        path: "/home",
+        loader: () => fetch("/player.json"),
         Component: Home
       },
       {
         path: '/player-details/:id',
-        loader: () => {return playersData},
+        loader: () => fetch("/player.json"),
         Component: PlayerDetails
       },
       {

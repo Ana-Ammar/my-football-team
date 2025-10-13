@@ -1,16 +1,16 @@
 import React from 'react';
 import Navbar from '../Components/Navbar';
-import Banner from '../Components/Banner';
 import Footer from '../Components/Footer';
 import { Outlet } from 'react-router';
 
 const RootLayout = () => {
     return (
-        <div>
+        <div className='flex flex-col h-screen'>
             <Navbar></Navbar>
-            <Banner></Banner>
 
-            <Outlet></Outlet>
+            <div className='flex-1'>
+                <Outlet></Outlet>
+            </div>
 
             <Footer></Footer>
         </div>
